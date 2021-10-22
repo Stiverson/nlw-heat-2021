@@ -27,62 +27,39 @@
           />
         </div>
 
-        <h1 id="userName">Stiverson Machado</h1>
+        <h1 id="userName"></h1>
         <a href="https://github.com/Stiverson" target="_blank">
           <img src="./images/github.svg" alt="ícone github" />
-          stiverson_machado</a
-        >
+          <span id="userLink"></span
+        ></a>
 
-        <p>Software engineer and eternal technology apprentice</p>
+        <p id="userBio">Software engineer and eternal technology apprentice</p>
 
         <ul id="socialLinks">
           <li class="youtube">
-            <a
-              href="https://www.youtube.com/channel/UCuXVUyENJ9S6G8cJQdVN_EA"
-              target="_blank"
-            >
+            <a href="https://www.youtube.com/" target="_blank">
               <img src="./images/youtube.svg" alt="ícone youtube" />
             </a>
           </li>
           <li class="facebook">
-            <a
-              href="https://www.facebook.com/profile.php?id=100006389086961"
-              target="_blank"
-            >
+            <a href="https://www.facebook.com/" target="_blank">
               <img src="./images/facebook.svg" alt="ícone facebook" />
             </a>
           </li>
           <li class="instagram">
-            <a href="https://instagram.com/stiverson_machado" target="_blank">
+            <a href="https://instagram.com/" target="_blank">
               <img src="./images/instagram.svg" alt="ícone instagram" />
             </a>
           </li>
           <li class="twitter">
-            <a href="https://twitter.com/tives_away" target="_blank">
+            <a href="https://twitter.com/" target="_blank">
               <img src="./images/twitter.svg" alt="ícone twitter" />
             </a>
           </li>
         </ul>
       </div>
     </main>
-    <script>
-      const LinksSocialMedia = {
-        github: 'stiverson',
-        youtube: 'channel/UCuXVUyENJ9S6G8cJQdVN_EA',
-        facebook: 'profile.php?id=100006389086961',
-        instagram: 'stiverson_machado',
-        twitter: 'tives_away'
-      }
-
-      function chanceSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-          li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
-        }
-      }
-
-      chanceSocialMediaLinks()
-    </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
 
